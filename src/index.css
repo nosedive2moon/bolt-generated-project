@@ -1,19 +1,32 @@
 @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-    body {
-      @apply bg-gray-50;
-    }
+body {
+  @apply bg-gray-50;
+}
 
-    .dashboard-container {
-      @apply min-h-screen flex;
-    }
+.dashboard-container {
+  @apply min-h-screen flex;
+}
 
-    .sidebar {
-      @apply w-64 bg-white shadow-lg fixed h-full;
-    }
+.sidebar {
+  @apply w-64 bg-white shadow-lg fixed h-full;
+}
 
-    .main-content {
-      @apply ml-64 flex-1 p-8;
-    }
+.main-content {
+  @apply ml-64 flex-1 p-8;
+}
+
+/* Custom styles for sidebar navigation */
+.nav-item {
+  @apply block px-4 py-2 rounded transition-colors duration-200;
+}
+
+.nav-item:hover {
+  @apply bg-blue-100;
+}
+
+.nav-item.active {
+  @apply bg-blue-600 text-white;
+}
