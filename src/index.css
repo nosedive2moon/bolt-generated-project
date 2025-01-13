@@ -1,0 +1,19 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    body {
+      @apply bg-gray-50;
+    }
+
+    .dashboard-container {
+      @apply min-h-screen flex;
+    }
+
+    .sidebar {
+      @apply w-64 bg-white shadow-lg fixed h-full;
+    }
+
+    .main-content {
+      @apply ml-64 flex-1 p-8;
+    }
